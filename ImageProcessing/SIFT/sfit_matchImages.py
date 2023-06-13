@@ -1,8 +1,17 @@
 import cv2
 
 # Load the two input images
-image1 = cv2.imread("F://4th Yr//ML AI//sources//h_face2.jpg")
-image2 = cv2.imread("F://4th Yr//ML AI//sources//h_face3.jpg")
+img1 = cv2.imread("F://4th Yr//ML AI//sources//drone_1.jpg")
+img2 = cv2.imread("F://4th Yr//ML AI//sources//drone_2.jpg")
+
+desired_width = 800
+desired_height = 450
+image1 = cv2.resize(img1, (desired_width, desired_height))
+image2 = cv2.resize(img2, (desired_width, desired_height))
+
+
+
+
 
 # Convert images to grayscale
 gray1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)

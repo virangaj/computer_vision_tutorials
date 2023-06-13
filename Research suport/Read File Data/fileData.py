@@ -2,7 +2,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 
 # path to the image or video
-imagename = "F://4th Yr//ML AI//sources//bike_1.png"
+imagename = "F://4th Yr//ML AI//sources//drone_1.jpg"
 
 # read the image data using PIL
 image = Image.open(imagename)
